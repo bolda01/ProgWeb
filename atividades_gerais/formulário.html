@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Atividade Formulário>
+    <meta name="author" content="Artur Bolda Amorim - IFES">
+    <meta name="keywords" content="formulário">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Usuário</title>
+    <link rel="stylesheet" href="../estilos/estilo_formulario.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title">
+            MANUTENÇÃO DE USUÁRIO DO SISTEMA INTERNO
+        </div>
+        <form action="#" method="post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="label-cell"><label for="login">Login</label></td>
+                        <td><input type="text" id="login" name="login"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell"><label for="senha">Senha</label></td>
+                        <td><input type="password" id="senha" name="senha"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell"><label for="status">Status</label></td>
+                        <td>
+                            <select id="status" name="status">
+                                <option value="ativo">Ativo</option>
+                                <option value="inativo">Inativo</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell">Tipo</td>
+                        <td>
+                            <input type="radio" id="tecnico" name="tipo_usuario" value="tecnico">
+                            <label for="tecnico">Técnico</label>
+                            <input type="radio" id="professor" name="tipo_usuario" value="professor">
+                            <label for="professor">Professor</label>
+                            <input type="radio" id="aluno" name="tipo_usuario" value="aluno">
+                            <label for="aluno">Aluno</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell"><label for="data_criacao">Data da Criação</label></td>
+                        <td><input type="text" id="data_criacao" name="data_criacao" placeholder="dd / mm / aaaa" class="date-input"> <span class="calendar-icon">📅</span></td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell">Perfil</td>
+                        <td>
+                            <input type="radio" id="convidado" name="perfil" value="convidado">
+                            <label for="convidado">Convidado</label>
+                            <input type="radio" id="administrador" name="perfil" value="admninistrador">
+                            <label for="administrador">Admninistrador</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell" style="vertical-align: top;"><label for="comentarios">Comentários</label></td>
+                        <td><textarea id="comentarios" name="comentarios" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell" style="vertical-align: top;">Tipo</td>
+                        <td class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="compras" name="tipo_acesso" value="compras">
+                                <label for="compras">Compras</label>
+                                <input type="checkbox" id="biblioteca" name="tipo_acesso" value="biblioteca">
+                                <label for="biblioteca">Biblioteca</label>
+                                <input type="checkbox" id="academico" name="tipo_acesso" value="academico">
+                                <label for="academico">Acadêmico</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="documentacao" name="tipo_acesso" value="documentacao">
+                                <label for="documentacao">Documentação</label>
+                                <input type="checkbox" id="rh" name="tipo_acesso" value="rh">
+                                <label for="rh">Recursos Humanos</label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="form-buttons">
+                <button type="submit">Cadastrar</button>
+                <button type="button">Excluir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
